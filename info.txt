@@ -1,0 +1,49 @@
+#single-spa
+#https://single-spa.js.org/docs/create-single-spa
+
+npm install --global create-single-spa
+# or
+yarn global add create-single-spa
+
+
+#Alternatively, you may use create-single-spa without global installation:
+
+npm init single-spa
+# or
+npx create-single-spa
+# or
+yarn create single-spa
+
+
+# Different ways of doing the same thing
+create-single-spa --framework react
+npm init single-spa --framework react
+npx create-single-spa --framework react
+yarn create single-spa --framework react
+
+# Two ways of doing the same thing
+create-single-spa my-dir
+create-single-spa --dir my-dir
+
+create-single-spa --moduleType root-config
+create-single-spa --moduleType app-parcel
+create-single-spa --moduleType util-module
+
+create-single-spa --framework react
+create-single-spa --framework vue
+create-single-spa --framework angular
+
+create-single-spa --layout --framework react
+create-single-spa --skipInstall --framework vue
+create-single-spa --framework angular
+
+
+Topic		Application			Parcel					Utility
+Routing		has multiple routes		has no routes				has no routes
+API		declarative API			imperative API				exports a public interface
+Renders UI	renders UI			renders UI				may or may not render UI
+Lifecycles	single-spa managed lifecycles	custom managed lifecycles		external module: no direct single-spa lifecycles
+When to use	core building block		only needed with multiple frameworks	useful to share common logic, or create a service
+
+
+
