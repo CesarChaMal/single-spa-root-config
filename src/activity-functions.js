@@ -3,7 +3,11 @@ export function navbar(location) {
 }
 
 export function employees(location) {
-  return location.pathname === "/employees";
+  // console.log(location)
+  // console.log(location.pathname)
+  // return location.pathname === "/employees";
+  // return location.pathname.employees;
+  return true;
 }
 
 export function employeeDetails(location) {
