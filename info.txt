@@ -24,6 +24,8 @@ yarn create single-spa --framework react
 # Two ways of doing the same thing
 create-single-spa my-dir
 create-single-spa --dir my-dir
+create-single-spa --dir my-dir --framework react
+create-single-spa my-dir --framework react
 
 create-single-spa --moduleType root-config
 create-single-spa --moduleType app-parcel

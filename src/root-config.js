@@ -19,4 +19,11 @@ registerApplication({
   activeWhen: isActive.employeeDetails
 });
 
+registerApplication({
+  name: "@mf-demo/home",
+  app: () => System.import("@mf-demo/home"),
+  activeWhen: location => location.pathname === "/"
+  // activeWhen: isActive.home
+});
+
 start();
