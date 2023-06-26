@@ -48,4 +48,7 @@ Lifecycles	single-spa managed lifecycles	custom managed lifecycles		external mod
 When to use	core building block		only needed with multiple frameworks	useful to share common logic, or create a service
 
 
-
+single-spa-home
+single-spa-navbar
+single-spa-employees
+single-spa-employee-details
