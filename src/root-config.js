@@ -23,7 +23,7 @@ registerApplication({
   name: "@mf-demo/home",
   app: () => System.import("@mf-demo/home"),
   activeWhen: location => location.pathname === "/"
-  // activeWhen: isActive.home
+  //activeWhen: isActive.home
 });
 
 start();
